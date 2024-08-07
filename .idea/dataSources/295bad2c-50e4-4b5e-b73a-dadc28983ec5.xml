@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="OpenGauss">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.52">
+    <root id="1"/>
+    <database id="2" parent="1" name="db_rzy">
+      <Current>1</Current>
+      <ObjectId>16388</ObjectId>
+      <OwnerName>rzy</OwnerName>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <Comment>default administrative connection database</Comment>
+      <ObjectId>15731</ObjectId>
+    </database>
+    <role id="4" parent="1" name="rzy">
+      <CanLogin>1</CanLogin>
+      <ObjectId>16384</ObjectId>
+    </role>
+    <tablespace id="5" parent="1" name="pg_default">
+      <ObjectId>1663</ObjectId>
+      <StateNumber>1</StateNumber>
+    </tablespace>
+    <tablespace id="6" parent="1" name="pg_global">
+      <ObjectId>1664</ObjectId>
+      <StateNumber>1</StateNumber>
+    </tablespace>
+    <schema id="7" parent="2" name="blockchain">
+      <Comment>blockchain schema</Comment>
+      <ObjectId>4990</ObjectId>
+      <StateNumber>1</StateNumber>
+    </schema>
+    <schema id="8" parent="2" name="cstore">
+      <Comment>database&apos;s default collation</Comment>
+      <ObjectId>100</ObjectId>
+      <StateNumber>1</StateNumber>
+    </schema>
+    <schema id="9" parent="2" name="db4ai">
+      <Comment>db4ai schema</Comment>
+      <ObjectId>4991</ObjectId>
+      <StateNumber>2</StateNumber>
+    </schema>
+    <schema id="10" parent="2" name="dbe_perf">
+      <Comment>dbe_perf schema</Comment>
+      <ObjectId>4988</ObjectId>
+      <StateNumber>1</StateNumber>
+    </schema>
+    <schema id="11" parent="2" name="dbe_pldebugger">
+      <Comment>dbe_pldebugger schema</Comment>
+      <ObjectId>4992</ObjectId>
+      <StateNumber>2</StateNumber>
+    </schema>
+    <schema id="12" parent="2" name="dbe_pldeveloper">
+      <Comment>dbe_pldeveloper schema</Comment>
+      <ObjectId>4993</ObjectId>
+      <StateNumber>2</StateNumber>
+    </schema>
+    <schema id="13" parent="2" name="dbe_sql_util">
+      <Comment>sql util schema</Comment>
+      <ObjectId>9049</ObjectId>
+      <StateNumber>2</StateNumber>
+    </schema>
+    <schema id="14" parent="2" name="information_schema">
+      <ObjectId>14729</ObjectId>
+      <StateNumber>2</StateNumber>
+    </schema>
+    <schema id="15" parent="2" name="pg_catalog">
+      <Comment>system catalog schema</Comment>
+      <ObjectId>11</ObjectId>
+      <StateNumber>2</StateNumber>
+    </schema>
+    <schema id="16" parent="2" name="pkg_service">
+      <Comment>pkg_service schema</Comment>
+      <ObjectId>3988</ObjectId>
+      <StateNumber>1</StateNumber>
+    </schema>
+    <schema id="17" parent="2" name="public">
+      <Comment>standard public schema</Comment>
+      <ObjectId>2200</ObjectId>
+      <StateNumber>2</StateNumber>
+    </schema>
+    <schema id="18" parent="2" name="rzy">
+      <Current>1</Current>
+      <Grants>16772||-9223372036854775807|d|G
+16772||16384|d|G
+16772||-9223372036854775807|a|G
+16772||16384|a|G
+16772||-9223372036854775807|x|G
+16772||16384|x|G
+16772||-9223372036854775807|r|G
+16772||16384|r|G
+16772||-9223372036854775807|t|G
+16772||16384|t|G
+16772||-9223372036854775807|D|G
+16772||16384|D|G
+16772||-9223372036854775807|w|G
+16772||16384|w|G
+16779||-9223372036854775807|d|G
+16779||16384|d|G
+16779||-9223372036854775807|a|G
+16779||16384|a|G
+16779||-9223372036854775807|x|G
+16779||16384|x|G
+16779||-9223372036854775807|r|G
+16779||16384|r|G
+16779||-9223372036854775807|t|G
+16779||16384|t|G
+16779||-9223372036854775807|D|G
+16779||16384|D|G
+16779||-9223372036854775807|w|G
+16779||16384|w|G
+16789||-9223372036854775807|d|G
+16789||16384|d|G
+16789||-9223372036854775807|a|G
+16789||16384|a|G
+16789||-9223372036854775807|x|G
+16789||16384|x|G
+16789||-9223372036854775807|r|G
+16789||16384|r|G
+16789||-9223372036854775807|t|G
+16789||16384|t|G
+16789||-9223372036854775807|D|G
+16789||16384|D|G
+16789||-9223372036854775807|w|G
+16789||16384|w|G</Grants>
+      <IntrospectionStateNumber>246062</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-06-25.02:05:10</LastIntrospectionLocalTimestamp>
+      <ObjectId>16395</ObjectId>
+      <StateNumber>32195</StateNumber>
+      <OwnerName>rzy</OwnerName>
+    </schema>
+    <schema id="19" parent="2" name="snapshot">
+      <Comment>snapshot schema</Comment>
+      <ObjectId>4989</ObjectId>
+      <StateNumber>1</StateNumber>
+    </schema>
+    <schema id="20" parent="2" name="sqladvisor">
+      <Comment>sqladvisor schema</Comment>
+      <ObjectId>7813</ObjectId>
+      <StateNumber>2</StateNumber>
+    </schema>
+    <routine id="21" parent="18" name="func_delete">
+      <ArgumentsDefinition>&quot;p_商品id&quot; character varying</ArgumentsDefinition>
+      <ObjectId>18015</ObjectId>
+      <ResultsDefinition>void</ResultsDefinition>
+      <Rows>0.0</Rows>
+      <SourceTextLength>60</SourceTextLength>
+      <StateNumber>206071</StateNumber>
+      <LanguageName>plpgsql</LanguageName>
+      <OwnerName>rzy</OwnerName>
+    </routine>
+    <routine id="22" parent="18" name="func_delete_trigger">
+      <ObjectId>18039</ObjectId>
+      <PgRoutineKind>pg-trigger</PgRoutineKind>
+      <ResultsDefinition>trigger</ResultsDefinition>
+      <Rows>0.0</Rows>
+      <SourceTextLength>150</SourceTextLength>
+      <StateNumber>209337</StateNumber>
+      <LanguageName>plpgsql</LanguageName>
+      <OwnerName>rzy</OwnerName>
+    </routine>
+    <routine id="23" parent="18" name="func_insert">
+      <ObjectId>18037</ObjectId>
+      <PgRoutineKind>pg-trigger</PgRoutineKind>
+      <ResultsDefinition>trigger</ResultsDefinition>
+      <Rows>0.0</Rows>
+      <SourceTextLength>150</SourceTextLength>
+      <StateNumber>209334</StateNumber>
+      <LanguageName>plpgsql</LanguageName>
+      <OwnerName>rzy</OwnerName>
+    </routine>
+    <routine id="24" parent="18" name="func_update">
+      <ObjectId>18041</ObjectId>
+      <PgRoutineKind>pg-trigger</PgRoutineKind>
+      <ResultsDefinition>trigger</ResultsDefinition>
+      <Rows>0.0</Rows>
+      <SourceTextLength>221</SourceTextLength>
+      <StateNumber>209340</StateNumber>
+      <LanguageName>plpgsql</LanguageName>
+      <OwnerName>rzy</OwnerName>
+    </routine>
+    <routine id="25" parent="18" name="proc_cha">
+      <ArgumentsDefinition>p_name character varying</ArgumentsDefinition>
+      <ObjectId>18016</ObjectId>
+      <ResultsDefinition>TABLE(id character varying, name character varying, price integer)</ResultsDefinition>
+      <ReturnsSet>1</ReturnsSet>
+      <SourceTextLength>77</SourceTextLength>
+      <StateNumber>206074</StateNumber>
+      <LanguageName>plpgsql</LanguageName>
+      <OwnerName>rzy</OwnerName>
+    </routine>
+    <table id="26" parent="18" name="c">
+      <ObjectId>16779</ObjectId>
+      <Options>orientation=row
+compression=no</Options>
+      <StateNumber>75330</StateNumber>
+      <OwnerName>rzy</OwnerName>
+    </table>
+    <table id="27" parent="18" name="s">
+      <ObjectId>16772</ObjectId>
+      <Options>orientation=row
+compression=no</Options>
+      <StateNumber>75330</StateNumber>
+      <OwnerName>rzy</OwnerName>
+    </table>
+    <table id="28" parent="18" name="sc">
+      <ObjectId>16789</ObjectId>
+      <Options>orientation=row
+compression=no</Options>
+      <StateNumber>75330</StateNumber>
+      <OwnerName>rzy</OwnerName>
+    </table>
+    <table id="29" parent="18" name="t_goods">
+      <ObjectId>17982</ObjectId>
+      <Options>orientation=row
+compression=no</Options>
+      <StateNumber>209206</StateNumber>
+      <OwnerName>rzy</OwnerName>
+    </table>
+    <table id="30" parent="18" name="t_order">
+      <ObjectId>18017</ObjectId>
+      <Options>orientation=row
+compression=no</Options>
+      <StateNumber>209341</StateNumber>
+      <OwnerName>rzy</OwnerName>
+    </table>
+    <table id="31" parent="18" name="t_user">
+      <ObjectId>17971</ObjectId>
+      <Options>orientation=row
+compression=no</Options>
+      <StateNumber>209206</StateNumber>
+      <OwnerName>rzy</OwnerName>
+    </table>
+    <view id="32" parent="18" name="boy">
+      <ObjectId>16853</ObjectId>
+      <SourceTextLength>124</SourceTextLength>
+      <StateNumber>75323</StateNumber>
+      <OwnerName>rzy</OwnerName>
+    </view>
+    <argument id="33" parent="21">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DasType>void|0s</DasType>
+    </argument>
+    <argument id="34" parent="21" name="p_商品id">
+      <DasType>varchar|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <argument id="35" parent="22">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DasType>trigger|0s</DasType>
+    </argument>
+    <argument id="36" parent="23">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DasType>trigger|0s</DasType>
+    </argument>
+    <argument id="37" parent="24">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DasType>trigger|0s</DasType>
+    </argument>
+    <argument id="38" parent="25">
+      <ArgumentDirection>T</ArgumentDirection>
+      <DasType>table(&quot;id&quot; varchar, &quot;name&quot; varchar, &quot;price&quot; integer)|0v</DasType>
+    </argument>
+    <argument id="39" parent="25" name="p_name">
+      <DasType>varchar|0s</DasType>
+      <Position>1</Position>
+    </argument>
+    <column id="40" parent="26" name="cno">
+      <DasType>char(5)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>75230</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <column id="41" parent="26" name="cname">
+      <DasType>varchar(40)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>75230</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="42" parent="26" name="cpno">
+      <DasType>char(5)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>75230</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <column id="43" parent="26" name="ccredit">
+      <DasType>smallint|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>75230</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <foreign-key id="44" parent="26" name="c_cpno_fkey">
+      <ColNames>cpno</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16784</ObjectId>
+      <StateNumber>75230</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16779</RefTableId>
+    </foreign-key>
+    <index id="45" parent="26" name="c_pkey">
+      <ColNames>cno</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16782</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>75230</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="46" parent="26" name="c_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16783</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>75230</StateNumber>
+      <UnderlyingIndexId>16782</UnderlyingIndexId>
+    </key>
+    <column id="47" parent="27" name="sno">
+      <DasType>char(9)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>75284</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <column id="48" parent="27" name="sname">
+      <DasType>varchar(20)|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>75228</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="49" parent="27" name="ssex">
+      <DasType>char(6)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>75228</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <column id="50" parent="27" name="sbirthdate">
+      <DasType>timestamp(0)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>75228</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="51" parent="27" name="sdept">
+      <DasType>varchar(40)|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>75228</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="52" parent="27" name="s_pkey">
+      <ColNames>sno</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16821</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>75284</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <index id="53" parent="27" name="s_sname_key">
+      <ColNames>sname</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16777</ObjectId>
+      <StateNumber>75284</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="54" parent="27" name="s_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16822</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>75284</StateNumber>
+      <UnderlyingIndexId>16821</UnderlyingIndexId>
+    </key>
+    <key id="55" parent="27" name="s_sname_key">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16778</ObjectId>
+      <StateNumber>75228</StateNumber>
+      <UnderlyingIndexId>16777</UnderlyingIndexId>
+    </key>
+    <column id="56" parent="28" name="sno">
+      <DasType>char(9)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>75290</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <column id="57" parent="28" name="cno">
+      <DasType>char(8)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>75232</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <column id="58" parent="28" name="grade">
+      <DasType>smallint|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>75232</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="59" parent="28" name="semester">
+      <DasType>char(5)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>75232</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <column id="60" parent="28" name="teachingclass">
+      <DasType>char(8)|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>75232</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <foreign-key id="61" parent="28" name="sc_sno_fkey">
+      <ColNames>sno</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16835</ObjectId>
+      <StateNumber>75290</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16772</RefTableId>
+    </foreign-key>
+    <foreign-key id="62" parent="28" name="sc_cno_fkey">
+      <ColNames>cno</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16799</ObjectId>
+      <StateNumber>75232</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16779</RefTableId>
+    </foreign-key>
+    <index id="63" parent="28" name="sc_pkey">
+      <ColNames>sno
+cno</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16833</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>75290</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>100
+100</CollationIds>
+      <CollationNames>default
+default</CollationNames>
+      <CollationParentNames>pg_catalog
+pg_catalog</CollationParentNames>
+    </index>
+    <key id="64" parent="28" name="sc_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16834</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>75290</StateNumber>
+      <UnderlyingIndexId>16833</UnderlyingIndexId>
+    </key>
+    <check id="65" parent="29" name="t_goods_price_check">
+      <ColNames>price</ColNames>
+      <ObjectId>17986</ObjectId>
+      <Predicate>price &gt;= 0</Predicate>
+      <StateNumber>206067</StateNumber>
+    </check>
+    <column id="66" parent="29" name="id">
+      <DasType>varchar(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>206067</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="67" parent="29" name="name">
+      <DasType>varchar(20)|0s</DasType>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+      <Position>2</Position>
+      <StateNumber>206067</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="68" parent="29" name="price">
+      <DasType>integer|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>206067</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="69" parent="29" name="t_goods_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17987</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>206067</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="70" parent="29" name="t_goods_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17988</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>206067</StateNumber>
+      <UnderlyingIndexId>17987</UnderlyingIndexId>
+    </key>
+    <column id="71" parent="30" name="id">
+      <DasType>varchar(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>209206</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="72" parent="30" name="gid">
+      <DasType>varchar(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>209206</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="73" parent="30" name="uid">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>209206</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="74" parent="30" name="buy_time">
+      <DasType>varchar(255)|0s</DasType>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+      <Position>4</Position>
+      <StateNumber>209206</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="75" parent="30" name="money">
+      <DasType>integer|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>209206</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <foreign-key id="76" parent="30" name="t_order_gid_fkey">
+      <ColNames>gid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>18026</ObjectId>
+      <StateNumber>209206</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>17982</RefTableId>
+    </foreign-key>
+    <foreign-key id="77" parent="30" name="t_order_uid_fkey">
+      <ColNames>uid</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>18031</ObjectId>
+      <StateNumber>209206</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>17971</RefTableId>
+    </foreign-key>
+    <index id="78" parent="30" name="t_order_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>18024</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>209206</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <index id="79" parent="30" name="t_order_uid">
+      <ColNames>uid</ColNames>
+      <ObjectId>18036</ObjectId>
+      <StateNumber>209207</StateNumber>
+      <AccessMethodId>405</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="80" parent="30" name="t_order_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>18025</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>209206</StateNumber>
+      <UnderlyingIndexId>18024</UnderlyingIndexId>
+    </key>
+    <trigger id="81" parent="30" name="trigger_insert">
+      <Events>I</Events>
+      <ObjectId>18038</ObjectId>
+      <StateNumber>209335</StateNumber>
+      <CallRoutineId>18037</CallRoutineId>
+    </trigger>
+    <trigger id="82" parent="30" name="trigger_update">
+      <Events>U</Events>
+      <ObjectId>18042</ObjectId>
+      <StateNumber>209341</StateNumber>
+      <CallRoutineId>18041</CallRoutineId>
+    </trigger>
+    <trigger id="83" parent="30" name="trigger_delete">
+      <Events>D</Events>
+      <ObjectId>18040</ObjectId>
+      <StateNumber>209338</StateNumber>
+      <CallRoutineId>18039</CallRoutineId>
+    </trigger>
+    <column id="84" parent="31" name="id">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>206067</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="85" parent="31" name="passwd">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>206067</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="86" parent="31" name="name">
+      <DasType>varchar(255)|0s</DasType>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+      <Position>3</Position>
+      <StateNumber>206067</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="87" parent="31" name="number">
+      <DasType>varchar(11)|0s</DasType>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+      <Position>4</Position>
+      <StateNumber>206067</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="88" parent="31" name="addr">
+      <DasType>varchar(255)|0s</DasType>
+      <DefaultExpression>NULL::character varying</DefaultExpression>
+      <Position>5</Position>
+      <StateNumber>206067</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="89" parent="31" name="type">
+      <DasType>varchar(2)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+      <StateNumber>206067</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="90" parent="31" name="t_user_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17980</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>206067</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="91" parent="31" name="t_user_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>17981</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>206067</StateNumber>
+      <UnderlyingIndexId>17980</UnderlyingIndexId>
+    </key>
+    <column id="92" parent="32" name="sno">
+      <DasType>char(9)|0s</DasType>
+      <Position>1</Position>
+      <StateNumber>75323</StateNumber>
+    </column>
+    <column id="93" parent="32" name="sname">
+      <DasType>varchar(20)|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>75323</StateNumber>
+    </column>
+    <column id="94" parent="32" name="cname">
+      <DasType>varchar(40)|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>75323</StateNumber>
+    </column>
+    <column id="95" parent="32" name="grade">
+      <DasType>smallint|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>75323</StateNumber>
+    </column>
+  </database-model>
+</dataSource>
